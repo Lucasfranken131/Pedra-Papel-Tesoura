@@ -17,6 +17,12 @@ function mudarComputador(){
     jogou = true;
     comecar = document.getElementById('Comecar');
     comecar.textContent = 'Jogar Novamente'
+    var Pedra = document.getElementById('Pedra');
+    var Papel = document.getElementById('Papel')
+    var Tesoura = document.getElementById('Tesoura');
+    Pedra.disabled = true;
+    Papel.disabled = true;
+    Tesoura.disabled = true;
 }
 
 function Pedra(){
@@ -40,10 +46,4 @@ function Tesoura(){
 function seleciona(){
     comecar = document.getElementById('Comecar');
     comecar.disabled = false;
-    var Pedra = document.getElementById('Pedra');
-    var Papel = document.getElementById('Papel')
-    var Tesoura = document.getElementById('Tesoura');
-    Pedra.disabled = true;
-    Papel.disabled = true;
-    Tesoura.disabled = true;
 }
