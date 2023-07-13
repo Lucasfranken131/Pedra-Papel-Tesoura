@@ -1,0 +1,48 @@
+body{
+    background: url(imgs/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#Jogo{
+    margin-left: 24%;
+    margin-top: 15%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+
+#Image,#Pedra,#Papel,#Tesoura,#Comecar,#Image2{
+    flex-basis: auto;
+}
+
+#Image{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+#Image2{
+    -webkit-animation:spin 4s linear infinite reverse;
+    -moz-animation:spin 4s linear infinite reverse;
+    animation:spin 4s linear infinite reverse;   
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+button{
+    height: 7%;
+    border-radius: 10px;
+}
+
+#Pedra:hover{
+    background-color: gray;
+}
