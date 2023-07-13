@@ -43,6 +43,6 @@ button{
     border-radius: 10px;
 }
 
-#Pedra:hover{
+#Pedra:hover, #Papel:hover, #Tesoura:hover{
     background-color: gray;
 }
